@@ -1,0 +1,90 @@
+[debug] [2024-09-27T07:09:34.529Z] : 
+[debug] [2024-09-27T07:09:34.536Z] : ----------------------------------------------------------------------
+[debug] [2024-09-27T07:09:34.537Z] : Command:      C:\Program Files\nodejs\node.exe C:\Users\thoufik\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\bin\catalyst.js login
+[debug] [2024-09-27T07:09:34.537Z] : CLI Version:  1.17.6
+[debug] [2024-09-27T07:09:34.538Z] : Platform:     win32
+[debug] [2024-09-27T07:09:34.538Z] : Node Version: v20.9.0
+[debug] [2024-09-27T07:09:34.539Z] : Time:         Fri Sep 27 2024 12:39:34 GMT+0530 (India Standard Time)
+[debug] [2024-09-27T07:09:34.540Z] : ----------------------------------------------------------------------
+[debug] [2024-09-27T07:09:34.540Z] : 
+[debug] [2024-09-27T07:12:13.245Z] : migration completed for v1.4.0
+[error] [2024-09-27T07:12:13.483Z] : × An unexpected error has occurred.
+[debug] [2024-09-27T07:12:13.483Z] : Error Stack: CatalystError: An unexpected error has occurred.
+    at exports.default (C:\Users\thoufik\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\errorOut.js:12:17)
+    at process.<anonymous> (C:\Users\thoufik\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\bin\catalyst.js:90:28)
+    at process.emit (node:events:514:28)
+    at emit (node:internal/process/promises:150:20)
+    at processPromiseRejections (node:internal/process/promises:284:27)
+    at process.processTicksAndRejections (node:internal/process/task_queues:96:32)
+[debug] [2024-09-27T07:12:13.484Z] : Original Error: Error: Error: EPERM: operation not permitted, rename 'C:\Users\thoufik\AppData\Roaming\zcatalyst-cli-nodejs\Config\zcatalyst-cli.json.tmp-74211332765318bb' -> 'C:\Users\thoufik\AppData\Roaming\zcatalyst-cli-nodejs\Config\zcatalyst-cli.json'
+    at renameSync (node:fs:1023:3)
+    at attempt (C:\Users\thoufik\AppData\Roaming\npm\node_modules\zcatalyst-cli\node_modules\atomically\dist\utils\retryify.js:33:27)
+    at attempt (C:\Users\thoufik\AppData\Roaming\npm\node_modules\zcatalyst-cli\node_modules\atomically\dist\utils\retryify.js:39:36)
+    at Object.writeFileSync (C:\Users\thoufik\AppData\Roaming\npm\node_modules\zcatalyst-cli\node_modules\atomically\dist\index.js:160:50)
+    at Conf._write (C:\Users\thoufik\AppData\Roaming\npm\node_modules\zcatalyst-cli\node_modules\conf\dist\source\index.js:375:28)
+    at set store [as store] (C:\Users\thoufik\AppData\Roaming\npm\node_modules\zcatalyst-cli\node_modules\conf\dist\source\index.js:296:14)
+    at Conf.set (C:\Users\thoufik\AppData\Roaming\npm\node_modules\zcatalyst-cli\node_modules\conf\dist\source\index.js:189:20)
+    at C:\Users\thoufik\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\migration\index.js:120:28
+    at Generator.next (<anonymous>)
+    at fulfilled (C:\Users\thoufik\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\migration\index.js:28:58) {
+  errno: -4048,
+  syscall: 'rename',
+  code: 'EPERM',
+  path: 'C:\\Users\\thoufik\\AppData\\Roaming\\zcatalyst-cli-nodejs\\Config\\zcatalyst-cli.json.tmp-74211332765318bb',
+  dest: 'C:\\Users\\thoufik\\AppData\\Roaming\\zcatalyst-cli-nodejs\\Config\\zcatalyst-cli.json'
+}
+    at exports.default (C:\Users\thoufik\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\errorOut.js:14:23)
+    at process.<anonymous> (C:\Users\thoufik\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\bin\catalyst.js:90:28)
+    at process.emit (node:events:514:28)
+    at emit (node:internal/process/promises:150:20)
+    at processPromiseRejections (node:internal/process/promises:284:27)
+    at process.processTicksAndRejections (node:internal/process/task_queues:96:32)
+[debug] [2024-09-27T07:12:13.484Z] : Error Status: 500
+[info] [2024-09-27T07:12:13.485Z] : Kindly contact Catalyst support [support@zohocatalyst.com] if you need any further assistance
+[debug] [2024-09-27T07:12:13.488Z] : Error: EPERM: operation not permitted, rename 'C:\Users\thoufik\AppData\Roaming\zcatalyst-cli-nodejs\Config\zcatalyst-cli.json.tmp-74211332765318bb' -> 'C:\Users\thoufik\AppData\Roaming\zcatalyst-cli-nodejs\Config\zcatalyst-cli.json'
+    at renameSync (node:fs:1023:3)
+    at attempt (C:\Users\thoufik\AppData\Roaming\npm\node_modules\zcatalyst-cli\node_modules\atomically\dist\utils\retryify.js:33:27)
+    at attempt (C:\Users\thoufik\AppData\Roaming\npm\node_modules\zcatalyst-cli\node_modules\atomically\dist\utils\retryify.js:39:36)
+    at Object.writeFileSync (C:\Users\thoufik\AppData\Roaming\npm\node_modules\zcatalyst-cli\node_modules\atomically\dist\index.js:160:50)
+    at Conf._write (C:\Users\thoufik\AppData\Roaming\npm\node_modules\zcatalyst-cli\node_modules\conf\dist\source\index.js:375:28)
+    at set store [as store] (C:\Users\thoufik\AppData\Roaming\npm\node_modules\zcatalyst-cli\node_modules\conf\dist\source\index.js:296:14)
+    at Conf.set (C:\Users\thoufik\AppData\Roaming\npm\node_modules\zcatalyst-cli\node_modules\conf\dist\source\index.js:189:20)
+    at C:\Users\thoufik\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\migration\index.js:120:28
+    at Generator.next (<anonymous>)
+    at fulfilled (C:\Users\thoufik\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\migration\index.js:28:58) {
+  errno: -4048,
+  syscall: 'rename',
+  code: 'EPERM',
+  path: 'C:\\Users\\thoufik\\AppData\\Roaming\\zcatalyst-cli-nodejs\\Config\\zcatalyst-cli.json.tmp-74211332765318bb',
+  dest: 'C:\\Users\\thoufik\\AppData\\Roaming\\zcatalyst-cli-nodejs\\Config\\zcatalyst-cli.json'
+}
+[info] [2024-09-27T07:34:51.756Z] : 
+[info] [2024-09-27T07:34:51.757Z] : Visit this URL on this device to log in:
+[info] [2024-09-27T07:34:51.762Z] : https://accounts.zoho.in/oauth/v2/auth?client_id=1000.D5IIHDXSPN2MII26AD0V61I6RMVSNM&scope=ZohoCatalyst.apigateway.apis.READ%20ZohoCatalyst.apigateway.apis.CREATE%20ZohoCatalyst.apigateway.apis.UPDATE%20ZohoCatalyst.apigateway.apis.DELETE%20ZohoCatalyst.apigateway.READ%20ZohoCatalyst.apigateway.UPDATE%20ZohoCatalyst.segments.ALL%20ZohoCatalyst.cache.READ%20ZohoCatalyst.cache.CREATE%20ZohoCatalyst.cache.DELETE%20ZohoCatalyst.queue.ALL%20ZohoCatalyst.queue.data.READ%20ZohoCatalyst.queue.data.CREATE%20ZohoCatalyst.projects.ALL%20ZohoCatalyst.project.export.READ%20ZohoCatalyst.project.export.CREATE%20ZohoCatalyst.project.import.READ%20ZohoCatalyst.project.import.CREATE%20ZohoCatalyst.project.import.DELETE%20ZohoCatalyst.cron.ALL%20ZohoCatalyst.zcql.CREATE%20ZohoCatalyst.webapp.ALL%20ZohoCatalyst.projects.users.READ%20ZohoCatalyst.projects.users.CREATE%20ZohoCatalyst.projects.users.DELETE%20ZohoCatalyst.projects.users.UPDATE%20ZohoCatalyst.authentication.CREATE%20ZohoCatalyst.email.CREATE%20ZohoCatalyst.tables.ALL%20ZohoCatalyst.tables.rows.ALL%20ZohoCatalyst.tables.columns.ALL%20ZohoCatalyst.tables.bulk.READ%20ZohoCatalyst.tables.bulk.CREATE%20ZohoCatalyst.folders.ALL%20ZohoCatalyst.files.CREATE%20ZohoCatalyst.files.READ%20ZohoCatalyst.files.DELETE%20ZohoCatalyst.functions.ALL%20ZohoCatalyst.functions.EXECUTE%20ZohoCatalyst.eventlistners.ALL%20ZohoCatalyst.eventlisteners.produce%20ZohoCatalyst.security.rules.Read%20ZohoCatalyst.security.rules.Update%20ZohoCatalyst.notifications.mobile%20ZohoCatalyst.notifications.web%20ZohoCatalyst.search.READ%20ZohoCatalyst.mlkit.READ%20QuickML.deployment.READ%20ZohoCatalyst.pdfshot.execute%20ZohoCatalyst.circuits.execute%20ZohoCatalyst.circuits.execution.READ%20ZohoCatalyst.circuits.execution.DELETE%20ZohoCatalyst.cli.logs.CREATE%20ZohoCatalyst.appsail.Read%20ZohoCatalyst.appsail.Create%20ZohoCatalyst.appsail.Update%20ZohoCatalyst.appsail.Delete%20AaaServer.profile.READ%20Stratus.sdkop.CREATE%20Stratus.sdkop.READ&response_type=code&access_type=offline&prompt=consent&redirect_uri=http%3A%2F%2Flocalhost%3A9005&state=kw2%2Bib9iXCK7O%2BMC78tFIQ%3D%3D
+[info] [2024-09-27T07:34:51.763Z] : 
+[error] [2024-09-27T07:35:04.398Z] : × An unexpected error has occurred.
+[debug] [2024-09-27T07:35:04.398Z] : Error Stack: CatalystError: An unexpected error has occurred.
+    at exports.default (C:\Users\thoufik\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\errorOut.js:12:17)
+    at process.<anonymous> (C:\Users\thoufik\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\bin\catalyst.js:90:28)
+    at process.emit (node:events:514:28)
+    at process.processEmit [as emit] (C:\Users\thoufik\AppData\Roaming\npm\node_modules\zcatalyst-cli\node_modules\signal-exit\index.js:199:34)
+    at emit (node:internal/process/promises:150:20)
+    at processPromiseRejections (node:internal/process/promises:284:27)
+    at process.processTicksAndRejections (node:internal/process/task_queues:96:32)
+[debug] [2024-09-27T07:35:04.398Z] : Original Error: Error: Error: spawn UNKNOWN
+    at ChildProcess.spawn (node:internal/child_process:421:11)
+    at Object.spawn (node:child_process:761:9)
+    at baseOpen (C:\Users\thoufik\AppData\Roaming\npm\node_modules\zcatalyst-cli\node_modules\open\index.js:224:34) {
+  errno: -4094,
+  code: 'UNKNOWN',
+  syscall: 'spawn'
+}
+    at exports.default (C:\Users\thoufik\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\errorOut.js:14:23)
+    at process.<anonymous> (C:\Users\thoufik\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\bin\catalyst.js:90:28)
+    at process.emit (node:events:514:28)
+    at process.processEmit [as emit] (C:\Users\thoufik\AppData\Roaming\npm\node_modules\zcatalyst-cli\node_modules\signal-exit\index.js:199:34)
+    at emit (node:internal/process/promises:150:20)
+    at processPromiseRejections (node:internal/process/promises:284:27)
+    at process.processTicksAndRejections (node:internal/process/task_queues:96:32)
+[debug] [2024-09-27T07:35:04.398Z] : Error Status: 500
+[info] [2024-09-27T07:35:04.399Z] : Kindly contact Catalyst support [support@zohocatalyst.com] if you need any further assistance
